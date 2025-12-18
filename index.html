@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 24px 16px 80px;
+  padding: 24px 16px;
 }
 
 .card {
@@ -40,7 +40,7 @@ h1 {
 
 .subtitle {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: #999;
 }
 
@@ -73,7 +73,7 @@ h1 {
 
 .hint {
   display: none;
-  margin-top: 16px;
+  margin-top: 18px;
   padding: 16px;
   background: #fff6fb;
   border-radius: 16px;
@@ -92,17 +92,15 @@ h1 {
   margin-bottom: 8px;
 }
 
-/* ---------- СЛАЙДЕР ---------- */
+/* Слайдер */
 .slider {
   position: relative;
   width: 100%;
   height: 360px;
-  margin: 18px 0 22px;
+  margin: 16px 0 20px;
   border-radius: 20px;
   overflow: hidden;
-  cursor: pointer;
   border: 2px solid rgba(199,125,255,0.35);
-  box-shadow: 0 10px 25px rgba(199,125,255,0.15);
 }
 
 .slider img {
@@ -112,239 +110,157 @@ h1 {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity 0.8s ease;
 }
 
 .slider img.active {
   opacity: 1;
 }
 
-.slider-hint {
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255,255,255,0.85);
-  color: #7a4fa3;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 13px;
-  pointer-events: none;
-  transition: opacity 0.6s ease;
-}
-
-.final-text {
-  font-size: 18px;
-  font-weight: bold;
+.slider-text {
   text-align: center;
-  line-height: 1.5;
-}
-
-@keyframes fly {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+  font-size: 13px;
+  color: #8a5fbf;
+  margin-bottom: 10px;
 }
 </style>
 </head>
 
 <body>
 <div class="page">
-<div class="card">
+  <div class="card">
 
-<h1>С днём рождения, матурым</h1>
-<div class="subtitle">✿ ✿ ✿</div>
+    <h1>С днём рождения, матурым</h1>
+    <div class="subtitle">✿ ✿ ✿</div>
 
-<div class="text" style="font-weight:500; color:#b07adf;">
-Наши счастливые моменты 💕
-</div>
+    <div class="text" style="font-weight:500; color:#b07adf;">
+      Наши счастливые моменты 💕
+    </div>
 
-<!-- СЛАЙДЕР -->
-<div class="slider" id="photoSlider" onclick="nextSlide()">
-  <img src="https://s273klg.storage.yandex.net/rdisk/83db83b8c0462cabe4fc6e8087f4ec84a2e637a8d553d0b0066820e95b44a362/6942c36a/9DqLgsy-dZr8UNh4JpMjzfPO6htbYrv9VrD-qvvpgsG8_XxHgcKB6IRB-FUysocqGYbS3rvsnds2KXmi1MS_jA==?uid=501448340&filename=photo_5337249820751629242_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=77747&hid=c4d534a8982916b9050c1f6376cac7ac&media_type=image&tknv=v3&etag=de91cc47707cf1d2ee79874e9430263f&ts=64626fa482e80&s=3ddf798a67ad0fbc9284474131f42a91ed356e621251c6f1d9da402c24c55d54&pb=U2FsdGVkX1-j_nL8uhc-R9JzZYiAjVLWoyg4zBK8G1_XMhJdyOcA_SrOW94IwtwtNEN0xcpmFCVZPn25OWxu8tg_bypFtKjlB-rDHmbmh2A" class="active">
-      <img src="https://s33klg.storage.yandex.net/rdisk/600f0fd0ba89e3cdd159b1e59e7c84e6ec70bc3b3954d8061677ef72762164a3/6942c662/9DqLgsy-dZr8UNh4JpMjzULfk0UAUPUFcOAA8SgwjpKKO-xSNQmV9F_irnR-QRdY9IGsCxc1ZQpmeFMdIx2F9g==?uid=501448340&filename=photo_5337249820751629243_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=98426&hid=03f2bba396549967876308816054ca3b&media_type=image&tknv=v3&etag=24b363a7eea125d0aa27017c7c335099&ts=646272794dc80&s=813fdd0118dbebd06ad534f27ae4b004645cb67d40f1da5402c5c4b50c0360fd&pb=U2FsdGVkX19bfx-Uv31DLB7U2Oljh7bgo7h8ax0QXnwkx4qVW80rftz3gbsnjHFoza4Z6p6asdVQxz-2hdPvtbioZb6d_1DjgPuuuGg3_vk">
-      <img src="https://s183klg.storage.yandex.net/rdisk/7e3932bdf3728dfb9d49bfc67f9fff6b45aef93e6a1666b9bace8843390240c2/6942c39d/9DqLgsy-dZr8UNh4JpMjzXkcES5AARORi6ebo1Rhwzam5nSJgLDNSMfwt3WN28X6izuozehiP6PBLsQ-JOvXHQ==?uid=501448340&filename=photo_5337249820751629244_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=101637&hid=c2615af34600b6e54118e9334d2a3c63&media_type=image&tknv=v3&etag=ff0cdf31e010257db39d8aac12c9fa5f&ts=64626fd526140&s=1cc8bac5eeb2036efeb07542c79a8b66aad60cd32da43174f046d7d05c995aca&pb=U2FsdGVkX1-kFKHxm3Zh9YK6LmITSC8Nz7naw5Q20o7Nnfp5fcTk0YLe4Me5DRmRqHTAorYPTkOrStV3wtYqTp0rXfaCMGS8d41Rc4hwi14">
-      <img src="https://s687sas.storage.yandex.net/rdisk/219f99816fb61fe858b60b845a20ce7e49315050e10eedd4ca3e87628a0c7226/6942c3d3/9DqLgsy-dZr8UNh4JpMjzVu6BxZQNS0wa90J7WSTE5dzvcZbtlfrTx5yqkqLVrnXK6bju2UvnXCGU9z8nOs7CQ==?uid=501448340&filename=photo_5337249820751629245_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=116287&hid=73eedd46668cc82984ef32cd96755e9d&media_type=image&tknv=v3&etag=458206e9264e09bbe4d21dd3cdd1a46d&ts=64627008a5ac0&s=46668c1385277a9f4dfff73fc8ed2c3e7f763befa2ca7c0730acdd215ab8e17b&pb=U2FsdGVkX19gSag742PUUpcGch4AtNIFZOJ4HiQmNWqKQs7ue8tx2Sj5onxS7oqtCrx9Qy1J4mMTUqJgFC677NnMWqKatp_BL7Q9VlD4H5Q">
-      <img src="https://s576sas.storage.yandex.net/rdisk/c4c70933405e3477b280b08533dc69b3dfc16e9b6fdabc58af1ed739d2f81560/6942c3fd/9DqLgsy-dZr8UNh4JpMjzfz46BLL4_CIVJWO9reYybiPt-PxfjbooSyqz0s-xQuwLP9S2dW0hj_STsRSIE7nHg==?uid=501448340&filename=photo_5337249820751629246_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=141129&hid=ac193aa61cb22b8a44986df74faf5d7d&media_type=image&tknv=v3&etag=7956a7a228127b686758dc02cdc1c55b&ts=64627030b3940&s=e7322aa3a25e6bf25574882dd51f5439783b3ef4fb48e1d2caa49f688a5fae7a&pb=U2FsdGVkX1_bdjvc8kBHZL2MFwFVOoEs2KkvT3q7k4zmOKlFiWBwF3V-RwXA8K0rRD1Gx9o4s7fpZFXHrlVp_0FpIcDEwSWtbwmvFrjhnn8">
-<img src="https://s325klg.storage.yandex.net/rdisk/43eff002a263c5e6cd22a76c010c371d08bed9f1729621ba8e31bd96a9a2d42f/6942c428/9DqLgsy-dZr8UNh4JpMjzY87uGlEf4y8zZMXoc9bt2bc5VfGZha8iamltt0ait_8T2l9HS_cG3o3qg8gEhkjsw==?uid=501448340&filename=photo_5337249820751629247_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=126732&hid=7bc8032fea0612aa97960ce30c311693&media_type=image&tknv=v3&etag=91a4c8f02dd1ab7d912c525b2d9ff19b&ts=64627059b5a00&s=554c8bc43b9703449c699d0dfc273828d0d2f435b9d8451698a7af44bdd1e916&pb=U2FsdGVkX183kpS3Nu9KXEFOCGnAdYyOGN8SAcZuoiujocYiNi4IIUBtStGuM3Xq9VcqZnRaCVhqxIyGmn-hK6btI5pQDjGL2Xeja-WjACU">
-<img src="https://s155vla.storage.yandex.net/rdisk/589a040d6dc89874d1db14f784d2bb22d38e35c69dd6f3c31911628b6dd20cb7/6942c436/9DqLgsy-dZr8UNh4JpMjzb_ytvdeY5JSE1rc7yyuoLDNifuyEzwdnChLsNVJXN34NIdCKsJhhG2QdmQJcsl7rQ==?uid=501448340&filename=photo_5337249820751629248_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=145209&hid=c17b02c4e61789510641997aa599a116&media_type=image&tknv=v3&etag=25e7bb13dfd404a0f0c9cba22452b9b1&ts=646270670f980&s=7c537dc371ac27f434048164c3981cbba3df686de50e1d727b0956bcd59ebdcc&pb=U2FsdGVkX1_eYaTKfvoZKSmN-LwmwHNC7E6cNIYkNZqDdxSuuVcOjo5u6nEkyVF6rP_MY-Nf7hKT7RiO1VegMgVApkHVowpVDqFOm7T9SAI">
-<img src="https://s1056sas.storage.yandex.net/rdisk/70553f3f3daae918ab8594535d624eff7ab695d3df4745c79dd2b005f8d29691/6942c443/9DqLgsy-dZr8UNh4JpMjzbXgDJnpp-PD-YZg81Pi8GuJJwQfEiiQNiuBjjcYDBe0use_ihjMLQsceIEmHoEqXQ==?uid=501448340&filename=photo_5337249820751629249_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=173800&hid=12d3aa5f6c18a2e5c96cc9b5cd9ada4c&media_type=image&tknv=v3&etag=46ab8b107e5b47efc63f7ec69ad66cdf&ts=64627073756c0&s=50d091c33b3195519ba717e181d3760251d2c897ee8e1b9fcaa0328e3bf912cc&pb=U2FsdGVkX1-1NIQa_jh0CoouooTvJmpgPmx4EUw66Ev7FXCyI-rpmLeUXqzdtTK6IUrLr7WFDqN6hE8TlKNGnyYpYMWQF6oRrG_qZilT6Q4">
-<img src="https://s712sas.storage.yandex.net/rdisk/b7be231de1b2e69cd6b540af930401df7428d21799c31979cdc6e63ef0440f05/6942c452/9DqLgsy-dZr8UNh4JpMjzZPZpM14TFfSkys1kvC74uDKNm9I8Gk594TQTw5GhNgRgO85NxUIZ4q4bHfmryJ_Fg==?uid=501448340&filename=photo_5337249820751629250_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=173530&hid=2884230a81dc6e16f1c64bce46cf2de6&media_type=image&tknv=v3&etag=64b7b3e4b505b5cbcd68c0114a3a7f24&ts=64627081c3880&s=c1940c51431e2a2092c84eeeaba9726b9268d4310be3aaa75a056095b6d6e0c7&pb=U2FsdGVkX18dtBILICNrhNN035l3v6yLL2t_uU09j_gyJalCT2SdDbT2EvYCW_aVLkR3NKlWCGiwQnbvwd8QWt4bkC2Tfw5pYbTGPXZyTN0">
-<img src="https://s371vla.storage.yandex.net/rdisk/85914962d1d127c372f5565ed3f2d111fc97775391bff4e5e945708e037610d6/6942c463/9DqLgsy-dZr8UNh4JpMjzQIHYRhkZgR4a_qFhqNGmmbf70_hiVEzQhmsxtYelN7wJ3qt6nOMVZuhVTKIsK-naA==?uid=501448340&filename=photo_5337249820751629251_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=174980&hid=d95133a840d3455eb1a6cf726a7c956d&media_type=image&tknv=v3&etag=413462c042da9502a988c764c9cb3e7c&ts=64627091f9ec0&s=a0350af1252d2f9da09e91f4d7d7170eda310029b5ffc9001c9b9b853cfde349&pb=U2FsdGVkX18ysvCx38G2xBF7oD2zzCLWeklqB3vAkqyvn33SFHNiVRmSlZWt1jZXb51-XuTl-eCLEcaFLwDsniXs7cYtVteTD2mK_x39b-o">
-<img src="https://s575sas.storage.yandex.net/rdisk/55ffb62fb5d0c3322df5b174af4df8428a92d8c3965e32a90cd63166ee29e6ee/6942c475/9DqLgsy-dZr8UNh4JpMjzcncP--0SNV1GhT2xlLKkpuD8z0EORgaIS5QnQwNfvNevnbVDD-PZeApjOgx72Gsrg==?uid=501448340&filename=photo_5337249820751629252_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=165284&hid=ce79cf97ba667bc5b26c7f7bf001573e&media_type=image&tknv=v3&etag=ea66529bc01653195f2e189792553bc2&ts=646270a324740&s=8c4c2534dd9ec87d0ed85b96d864c7801372f993a12f5be6c76375434dad4ec9&pb=U2FsdGVkX18bVPgxbpK_kvgPEYLBxsUiZBPACyvbuFj4GJHf8vo_NATzwPDTtmYXMe98xraW0xCDe2_HmwrQ7_huJeGKJ7gURPWmHDda_Fc">
-<img src="https://s525klg.storage.yandex.net/rdisk/fa2d61d1157715661512bc5806aa192bcf20fb8895132d3b8ff0543a70805988/6942c498/9DqLgsy-dZr8UNh4JpMjzRYmeBbjx-gqXDfz-RpoZYLfPW_BM2EwwbZ3IxZZBzMNfSfs3tiRGQTH-7nBvdfSig==?uid=501448340&filename=photo_5337249820751629253_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=175188&hid=7c4730e1765dc90874929bef174b7d61&media_type=image&tknv=v3&etag=3b3751c443eec665955326f9e842a478&ts=646270c485600&s=a28227bf31f3c78d4fd5fcdaaffba393abe320c38c7f77dc45e9c26850e12a7c&pb=U2FsdGVkX1-zU-a_EhV1TVnkSc8ZDGv8JoVip6wPkaHHBaIaVchEf34cTxPH2OVY07X0qAYknwWfOV8YCrHQk0Im198w2JnDnnC_oOivnTc">
-<img src="https://s376vla.storage.yandex.net/rdisk/21653440c57de1a500fbdbbc6965d947dfc6cbaeca21ba3e452d76f69ebc72fe/6942c4aa/9DqLgsy-dZr8UNh4JpMjzUPH5wnPxtD4PNAs9ylCCD-3r5dajoYZJTbpcl2KKkmIjBGX2ocgrtjJsarHb1kX5Q==?uid=501448340&filename=photo_5337249820751629254_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=183908&hid=149669e7408166db721062def8a068de&media_type=image&tknv=v3&etag=703e97967b2eb846e304b8247939fdc9&ts=646270d5afe80&s=034d71401efecfd7d098a6dbd0e6034270530134b079ce42dbde1d0bf020a383&pb=U2FsdGVkX1_6aPnkEJ-CuTeoijAoxuNt-u9STOWK3eG4sund_kK6ZSiwnqxSFmw3uGcPLu8sPM4boFFskutN5KSeHa6eoemn6Z6WYO5YJTc">
-<img src="https://s62klg.storage.yandex.net/rdisk/701eb242471edfdcdbb0f39c23f022fe441f36c6941e43e7a722f4176604a743/6942c4bc/9DqLgsy-dZr8UNh4JpMjzfKWCDTU3VBW4FBo3ueW7ENqTvO8nAsUKqb1aNWu77lPgtPQq5ju1qK52TF9ryezsw==?uid=501448340&filename=photo_5337249820751629255_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=160902&hid=8ee22ef7d8e4d48bfd41899e102cd09a&media_type=image&tknv=v3&etag=34d6c9599e31308edddf0c3a12b689cc&ts=646270e6da700&s=ca9f8f343be6ea063c491489b9df0bfc476453ae8f0c8aadc12a340d9503945c&pb=U2FsdGVkX1-F4eIunHcg5sAZpuWsgCVgGlaq4LpOhHM2pOfJ4Cs_in5B0uJ5KlcSjK0PaJ5lZynas_czyIPCJgD1jHhW5s1eR-fM3mT3TE8">
-<img src="https://s107vla.storage.yandex.net/rdisk/a73608fa4de4877e8b493693736a52010dbd6c4c535eff2580fd743be2c7e779/6942c4c8/9DqLgsy-dZr8UNh4JpMjza1Mxxf_K42O-n_14JxKg2HKppH-YsA2jY5mvWAtHjy_ngnd6U1b20EiVyoYNsC2dA==?uid=501448340&filename=photo_5337249820751629256_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=172985&hid=e049ec7a971c00fa44b33b3ce500deb1&media_type=image&tknv=v3&etag=a1e1ae7ab5f0ca39cadbf5dcfd19f5cc&ts=646270f24c200&s=552a7fe7802142fade675b00ddb7f922560c9a5486171d90cf3d17b6ec9495ea&pb=U2FsdGVkX191uqQgpHCsSW6-DVlPCA_89p0cosSU8D6Hswk7R2SJdmaXLU-L2PFnV3iG9cEHjUtbmjHDk56U3_vkHKqyxGp5GfwHy39FxpQ">
-<img src="https://s666vla.storage.yandex.net/rdisk/cf8783049f570cd268ffbca4e1d97a1e8e7876f06604a3284a58e588a3f220e5/6942c51d/9DqLgsy-dZr8UNh4JpMjzapOlw_yEzUhYi_jKYSr-A2PoTpE-9wtmcl3vuE_4TbXJ8aAlE03oOGYXPG27NPRVw==?uid=501448340&filename=photo_5337249820751629257_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=169923&hid=df1f328ba4e3a3ec5bad0e5f45b1cf45&media_type=image&tknv=v3&etag=89d64b83df929087fddc0fa3e12754c9&ts=646271435c140&s=5266a57a0584be3303c9a256de5d2e345c1fafb2fa20f156131edea1f25b2dbb&pb=U2FsdGVkX1-msKbiniWv9foe8d87Fa2Mb4Azz8dIlIxjTCQdK2hyegkcMR9pgPhUypwrXJFLoPSZmvqPbOvH7t-lwPHacfAe6Bi9NVQrfZ8">
-<img src="https://s304klg.storage.yandex.net/rdisk/099b73eb07f8488317637621812106877f4e01379ae3e481239dc9192695bdeb/6942c533/9DqLgsy-dZr8UNh4JpMjzZcmwCYEfyAzY1fCFkcHqnV3Z9lQvKJZDH7jcrWG4b4OV6fGVJKA78HS4TGJfem4pA==?uid=501448340&filename=photo_5337249820751629258_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=165380&hid=0d89b646defac2d5deffcf3fe019e564&media_type=image&tknv=v3&etag=a0d9b2de7f98236d24e16001736f4b16&ts=64627158572c0&s=db74d1634cd76a96bb92a257f6a4708f327df7bafd74017c2d7e87cf8f9e31c6&pb=U2FsdGVkX19uDye0VBBy8oCE1r-q6mBGbY1-0yq3jQA5B9UFHPDQqnM--qKmeAGWAu3b0xO_33jl3WTZ-qG5MS3BXgFz8VWP4r2VxdsM5qE">
-<img src="https://s475vla.storage.yandex.net/rdisk/32ef05b43839e0184d7a2ac3b4e4330bf55632525efcce5cf7c063a7edb011e0/6942c53f/9DqLgsy-dZr8UNh4JpMjzcrMIgqcHevwVgfmegvP19R1cGhaoQ7u7bRuDKm4DXCtluIKr1E2o65X_hM7msWvFA==?uid=501448340&filename=photo_5337249820751629259_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=205475&hid=b9f8526b5d96a1a3fe110706352b3984&media_type=image&tknv=v3&etag=40d2ab1a38cf84bf8c2b4ff351a7fd85&ts=64627163c8dc0&s=ec02aca023b14ab83f05a237d64a82405e161efe6905137546d6555a10fee4ba&pb=U2FsdGVkX19e-PTEqF4IyMxM2jYZnne2PbOztCyftRepPUA3WPND7huonTIE7YkaxPI7R6Kx7K4kJ9o3FkVF4VRCFZHBxsM_ID5GNNpZIqc">
-<img src="https://s619vla.storage.yandex.net/rdisk/78aa8a24c31ff116afac5643f6f5056c2928462cbc5c083d8f53936dcfeb683d/6942c55e/9DqLgsy-dZr8UNh4JpMjzSjcff5I3DIoSo5Bo6fkKJPmC7rW8-McZzAYjMST4tiqPm_26dZMFH1rduR9DJ_0EA==?uid=501448340&filename=photo_5337249820751629260_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=154503&hid=182fdde74dddf3a015499fca5f685a19&media_type=image&tknv=v3&etag=8804d6d1599ab04294369d489f4a2b8a&ts=6462718159380&s=257b69cc5c5abe922272b322553190aac3c49c864f29c58412f458e805b0709d&pb=U2FsdGVkX1_gmkhpM1u2yBuZ9-1B09Ym7uNc6EKWMlOF6s2r-5AbATKOuJQ4G9aR9eFGmcqJFA6z_CDb0zFeiswbg8YMRX76560NPUO8pe0">
-<img src="https://s222klg.storage.yandex.net/rdisk/3c023b5972f299a2d9179e53bb284ffa291872f720a803f5ff7756b3edceb0cc/6942c571/9DqLgsy-dZr8UNh4JpMjzc_B70wGeqW21zcs0LtB1VZuLO2aOB8qn3A3hGSHZzfaImSTedWCzV4HqcwnGVOhQg==?uid=501448340&filename=photo_5337249820751629261_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=192841&hid=e9abdf58c561f53d3b1090050f4f78c2&media_type=image&tknv=v3&etag=fd6fcf506cc5cf8580c3f4e14276978b&ts=6462719377e40&s=d5f4b581c0098f9b13a9d0e40f1c9a6e0b18cac2b572d5c5c20d944b35caa4e1&pb=U2FsdGVkX18gAGZ-cRt1BmgCyTsg2TRtdlO_asBWGS5gndfPImPWi_RR1BZTBaiXAdgi_I9yXZrMdVKwyAfTFNCfnKk8nkvq7HCIg-FB_vQ">
-<img src="https://s589vla.storage.yandex.net/rdisk/af300b5770bb2262932666b417163779695337e62adf620afb1e1b616a482d9e/6942c57e/9DqLgsy-dZr8UNh4JpMjza0hrAwlHakLpIDTokLQ6WO-KzowYZTUIFHbIUmZDxkcwPGexXY7Jch4TPEVnF9DUQ==?uid=501448340&filename=photo_5337249820751629262_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=208848&hid=d68affbced8545a94e3d8b350eed214e&media_type=image&tknv=v3&etag=160dc632995c0313c9193cefe86c611e&ts=6462719fddb80&s=f1df23ba6d89521ad5a3eedce54ee26160f5def45a2a754f29dbcf871de8b50a&pb=U2FsdGVkX18XbbbTPACd7mIBH3q2J8s0CJ6_CB2RKTcpGdcWlKr_3w_NqWuI5pRZbrF2IIXxWh81Ezu72Ql3exnbF9Pob76WeFvmYYEW_WU">
-<img src="https://s880sas.storage.yandex.net/rdisk/7d46310ae30ef775d3f5635d154ca37ef9fee18068cbe081d4ca1d4755bcb316/6942c598/9DqLgsy-dZr8UNh4JpMjzaiN-uAs7bxJ7UmXvq5Ao1bUKrkA0t3AdxmB2v3bdUrGL7SeBjN4ixxzj5EqtFIs4g==?uid=501448340&filename=photo_5337249820751629263_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=213575&hid=36d3042893573bad05d21049aa180e87&media_type=image&tknv=v3&etag=fc57d75651b9065f76b5f7c11d7beb8b&ts=646271b8a9600&s=de8fbaf30f16be37b2246eff9c29067e4acdf8f4da3ac75b20b6a1a9ba16f1e4&pb=U2FsdGVkX1_IhFeTb5pkbeBa5reNdogwkKtnnLz-dbKd6A3bxEvUHUOT1dswikZibiZq7L5_MqbEmmPfva6rWn-rWWbhLIAeVftLo8JCjpU">
-<img src="https://s262klg.storage.yandex.net/rdisk/0ce0c14b4363edb331b48c746d55bca2e39c8b233428e49bd3fcfbe3ec9510b9/6942c5aa/9DqLgsy-dZr8UNh4JpMjzTx3UEvZYJx7P_dKAI5xrt15BiPUa_B5cPFSW1ZmTeToJb8LdjSak5nwWuPTZnmGxQ==?uid=501448340&filename=photo_5337249820751629264_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=224368&hid=454e804e7984c4984234f1c572d69903&media_type=image&tknv=v3&etag=5078eb675b86bd7dc9b279064ac2fe4d&ts=646271c9d3e80&s=e9a1f099ced20978b0f0e4525f368f0238ad3d8edc975d767ed12b9906f32a15&pb=U2FsdGVkX19W92P6Kdam_z3fyx84uxfQ2Ed8mXE0vz7EvytN52Tta7pMzRQRrZFGLpAPIXHDXTlOyuydZp8nOrRcF8vYy-Opd5J9UDMeVgc">
-<img src="https://s1193sas.storage.yandex.net/rdisk/e444c40cf49936b90fac592f006fad42434817fce440f55dcbb56168797ba851/6942c5bd/9DqLgsy-dZr8UNh4JpMjzZdiTJ8SKklgSRA6edrAOtrcqEHQUpOkOPw9X0wE58PsTQJ7z8WFJPb9bcBsgqzuUw==?uid=501448340&filename=photo_5337249820751629265_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=262255&hid=c6bfc888a23afe8c2bb5881b95a940e7&media_type=image&tknv=v3&etag=218f9f62a04db1ec9a5006152710aff7&ts=646271dbf2940&s=ddb4831ae2bfe4587ad9b96440c660e54c4e9740d34f5b93f60150d3132c5de2&pb=U2FsdGVkX188NtGi1zc8IG0dxuonqRUAFg2O-H4Wi6Hp2de8BLd6CINuqnLv761yRaWs604qZ7dMhSKrfYiVoHxcz0Kqi4WEPdMdpRTRf1Q">
-<img src="https://s168klg.storage.yandex.net/rdisk/0c141a15b2c0984f41dc3f513de1e38a1df5cf1c8e79c6f8486063341359dc36/6942c5c7/9DqLgsy-dZr8UNh4JpMjzeCbQ1JOZLbVQr5-183kMT8Ovx13mZZHb2TTXAsfpDvVsgH7MQITSipOIRKKRsMitA==?uid=501448340&filename=photo_5337249820751629266_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=235603&hid=f4a771160ec6c4106554d3ed7966d7d3&media_type=image&tknv=v3&etag=01452ca7eaefaaf36fed64bce2ea58db&ts=646271e57bfc0&s=1e7bfd4aaf5febe8323a0fcc4b78a5a16142e81cc1a2dc5f519b38feac1617e7&pb=U2FsdGVkX18sy37AKRXjPnMfwXlG8Ul06duHdZBto_SzLRgOQR61REXLl35yUQlV8hMxw59uU18x_ZlWcCrYxCQWx-VeH_yFEJBDgP8oIRo">
-<img src="https://s675vla.storage.yandex.net/rdisk/ac492148cccded6a5906b96e2dca3f84a0d6fe0d77dded6dca993ea1f28c63d7/6942c5da/9DqLgsy-dZr8UNh4JpMjzVOPsHff9FNXf5uWUw7fPq2cDK6naIYJZ2vUIkTdAVgW2i8fUrkYxGa6C2T9oLe3ag==?uid=501448340&filename=photo_5337249820751629267_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=191694&hid=b89871dd30cd5e99ce5663f5dfd71b59&media_type=image&tknv=v3&etag=dd768cb3c2215de7f791dfa889222269&ts=646271f79aa80&s=1ecea27289715d93c257f27b71c366b044aeaec46388428b43925cbcc16d797e&pb=U2FsdGVkX1-kBsnx_-tsxwb020s2Nhn4cd8GLgJ4lY7n7gzm15Fjf8OcvGmz74YzQiWgNWcDcMUAlCl3_cT_lc0ONauYXRdxJ6KYc_W-9xM">
-<img src="https://s462klg.storage.yandex.net/rdisk/039c9c3da2f7d1d0cb526b9929d2e5f8121d8f1f53c8cfa3a1a38c68c8f28e5f/6942c5f6/9DqLgsy-dZr8UNh4JpMjzdWnd993UkD5dASXjhmpInK52J3k_gqazlB-QVInZYAbsFxNc9jZAAa2VkirH9zbtA==?uid=501448340&filename=photo_5337249820751629268_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=223886&hid=a2477df9acef80ba5cb958bad0203cd9&media_type=image&tknv=v3&etag=cf121cd45e523cb8d580933f30bd4365&ts=646272124e980&s=5a0821d40b00d74661e49f6d6ef28ce658342bacb3c146b9da732f41dc23617f&pb=U2FsdGVkX1_JODJU4UR1FP2L0__s4Wn9l5lsurNtS3lq4bMMNO24qhtgXFiGfeo_G2S1ggYU04XCrCcCtsFvCeMGd3Cz1FJdfF2LdKtUChQ">
-<img src="https://s701vla.storage.yandex.net/rdisk/acf31099049cab2206ef08c8365ad4498750a37f88db1bf01ab1bbaa5ced3c07/6942c602/9DqLgsy-dZr8UNh4JpMjzXG-d7WrRhtrUmupeoVsM_R1bKFnR2oQK5wcQ-3sxUoASO9PVUeBt3d5yt5Cep9C5g==?uid=501448340&filename=photo_5337249820751629269_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=287287&hid=fddecd55bf2c610defccd416fa7ab03f&media_type=image&tknv=v3&etag=2c91bb99254853b79389778f9fc24a1b&ts=6462721dc0480&s=83a4c9aaae34377c58f67137f288afed144006b2a4d36e6fa64bfc6ff1919c84&pb=U2FsdGVkX19YXhap4C_Rl6vNjjW8SzOBBtOQzZqdeJz-KN_DCLJdXuF1WbUpuQ79iu0f8VvymFWmYaEkdFkTh3vdvY0UXU5B_vqm5eB3TB8">
-<img src="https://s591vla.storage.yandex.net/rdisk/b65d82641aada83f19153045863c22c0c8c3b30e4facb99dc79c221b95235dfe/6942c611/9DqLgsy-dZr8UNh4JpMjzVkMjI3dRHWP9IYPtshg-O_fHBtK4aI6eQjY32I4RN7VCAlj7dX20rv9b7ASs1q21A==?uid=501448340&filename=photo_5337249820751629270_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=221931&hid=9abea07be169ab28f11ff40c886d0969&media_type=image&tknv=v3&etag=a57955d66ad21534502661189455851e&ts=6462722c0e640&s=3d2a1b15588e95d500ff579f472e31040945cce2ddb3401d43c275019525bbc4&pb=U2FsdGVkX1_rEesH77Jn7FD489dpXasWNg-pIuNmKOV0whHjig4doDNjlYZZVNVm1YZGZ0mlGfcK58iz3TAnEHLyax2za2YQINUXVdsuDHs">
-<img src="https://s89klg.storage.yandex.net/rdisk/7150c08dc6e8dd8e4cd7f5cfa8c150745ada72dfe53bdddacfa60343329d82a2/6942c621/9DqLgsy-dZr8UNh4JpMjzf97vNJGILDT7s-GDNrEh-nQ3HI_OsDhw4yX-lCJK1NsZPjLcFBSfJMwCY8utwDnNA==?uid=501448340&filename=photo_5337249820751629271_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=385096&hid=cbb4fed6750a02222b176604eda8c1b5&media_type=image&tknv=v3&etag=02dc6e048abca2eebc3d3e76999846c5&ts=6462723b50a40&s=411611845b62410aa3320a89c439c81f4b7b4ea9088012b08428946017b34a3d&pb=U2FsdGVkX19ERvPT5qppOHKjCkBy70arE_e9QxwCmbdYnNzp2C1Xi2qqjRi7SS4Hmlt8d_FnjlLFWNyaN76JUAdlUnHeyuwMMvspBrgQ09w">
-<img src="https://s26klg.storage.yandex.net/rdisk/c38ae8d68bd7de4090b59dd2ceb2db76326defe0622000f9ba6cef607bbdab74/6942c633/9DqLgsy-dZr8UNh4JpMjzW0p4f6Q70OwVX_XzwvyAUJabVeJ-PygXuc-lmKN1VOwoyriHPIAFvXvJx2ocwJ5Qw==?uid=501448340&filename=photo_5337249820751629272_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=343596&hid=f8435e514d305aedde0c74074ed31287&media_type=image&tknv=v3&etag=5e6aa629e834292f5fc6ee2a5f0bc00b&ts=6462724c7b2c0&s=d0577c4affa700bbc4de56276987707a5bf93953bb9efd5b8a7422eb6fe22eed&pb=U2FsdGVkX18YgqMV1I7cXjBxUj3--_XTSk2dq3EWfJ3G8jIJylFtiKqhXg8FELp57_BT7oT4SCnrrvmpp8ZgHKlnzX5MUZwmzbg5IRDlc_g">
-<img src="https://s222vla.storage.yandex.net/rdisk/7b1e957297db2492b0e7d20d107fc94554b6979d90091aa05f390af84fed0087/6942c63e/9DqLgsy-dZr8UNh4JpMjzXOhDMfDeUQOd5EBtSZ9BYhi0SgFu5TH-w5IfPRv-ZZKwKutIiUCfxsD5gQbzJLNVw==?uid=501448340&filename=photo_5337249820751629273_y.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=501448340&fsize=473176&hid=4ea7a87fbec7d9e8b0d67767f1a53b08&media_type=image&tknv=v3&etag=d0cc6235d48da4fdc333c6de79b6190c&ts=64627256f8b80&s=80a015ddd08ccaa139ef2034a01a51062f7803f5d160fca52f37a4d21b1978fc&pb=U2FsdGVkX18AAdwTG80CqVeQgeIDfk1KwKjMqtSK2bre_HiE06-v8npd7lfN0wzSfn23Mmw7cg9o53inLmiDZfFfBfEfDhA3kSBVcMuhxxY">
-    
-  <div class="slider-hint" id="sliderHint">
-    Нажми на фото, чтобы перелистнуть
+    <div class="slider" onclick="nextSlide()">
+      <img src="photo1.jpg" class="active">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+    </div>
+
+    <div class="slider-text">Нажми на фото, чтобы перелистнуть</div>
+
+    <div class="text">
+      Пусть этот день будет наполнен нежностью, теплом и улыбками.<br>
+      Пусть мечты сбываются легко, а счастье сопровождает тебя каждый день.
+    </div>
+
+    <button class="btn btn-primary" onclick="showHint1()">Получить первый подарок</button>
+
+    <!-- Подсказка 1 -->
+    <div class="hint" id="hint1">
+      <div class="hint-title">Подсказка №1</div>
+
+      Есть <b>две исходные части кода</b>:<br>
+      1️⃣ <b>59 926 024</b><br>
+      2️⃣ <b>77 940 778</b><br><br>
+
+      Если убрать пробелы, это просто числа.<br><br>
+
+      ➤ Из <b>первого числа</b> вычти дату, с которой для нас всё началось.<br>
+      ➤ Из <b>второго числа</b> вычти дату, когда мы впервые увиделись и по-настоящему заговорили.<br><br>
+
+      Записывай даты как набор цифр — без точек.<br><br>
+
+      Если всё сделано правильно, у тебя получатся два знакомых числа.<br><br>
+
+      <button class="btn btn-secondary" onclick="showDates()">Не могу вспомнить даты</button>
+      <button class="btn btn-secondary" onclick="showAfterReady()">Готово</button>
+    </div>
+
+    <div class="hint" id="dates">
+      <div class="hint-title">Ничего, бывает 💗</div>
+      — 05.01.2023<br>
+      — 25.06.2022
+    </div>
+
+    <div class="hint" id="afterReady">
+      <div class="hint-title">Дальше</div>
+      Подумай, на что похожи эти числа и где такие обычно используют.<br><br>
+      <button class="btn btn-secondary" onclick="showHint2()">Нужна подсказка №2</button>
+    </div>
+
+    <!-- Подсказка 2 -->
+    <div class="hint" id="hint2">
+      <div class="hint-title">Подсказка №2</div>
+      Эти числа нужно ввести в <b>правильное место</b>, ничего не меняя.<br><br>
+
+      <!-- ПЕРЕИМЕНОВАННАЯ КНОПКА -->
+      <button class="btn btn-secondary" onclick="showWait()">Я не понимаю</button>
+
+      <!-- ПРАВИЛЬНАЯ КНОПКА -->
+      <button class="btn btn-secondary" onclick="showFinal()">Я поняла</button>
+    </div>
+
+    <!-- Ожидание -->
+    <div class="hint" id="wait">
+      <div class="hint-title">💗 Подожди немного 💗</div>
+      Не переживай.<br>
+      Тогда просто немного подожди.<br>
+      Я знаю, ты не любишь ожиданий,<br>
+      но поверь — оно того стоит.
+    </div>
+
+    <!-- Финальное поздравление -->
+    <div class="hint" id="final">
+      <div class="hint-title">🎉 С днём рождения 🎉</div>
+      Ты умница 💗<br>
+      Собирайся — я тебя жду.<br><br>
+      Скажи, когда будешь готова,<br>
+      и я закажу тебе такси.
+    </div>
+
   </div>
 </div>
 
-<div class="text">
-Пусть этот день будет наполнен нежностью, теплом и улыбками.<br>
-Пусть мечты сбываются легко, а счастье сопровождает тебя каждый день.<br>
-Я очень сильно люблю тебя!
-</div>
-
-<button class="btn btn-primary" onclick="firstGift()">Получить первый подарок</button>
-<button class="btn btn-secondary" onclick="showHint1()">Получить подсказку</button>
-
-<!-- ПОДСКАЗКА №1 -->
-<div class="hint" id="hint1">
-  <div class="hint-title">Подсказка №1</div>
-  Есть <b>две исходные части кода</b>:<br>
-  1️⃣ <b>59 926 024</b><br>
-  2️⃣ <b>77 940 778</b><br><br>
-
-  Если убрать пробелы, это просто числа.<br><br>
-
-  ➤ Из <b>первого числа</b> вычти дату, с которой для нас всё началось.<br>
-  ➤ Из <b>второго числа</b> вычти дату, когда мы впервые увиделись и по-настоящему заговорили.<br><br>
-
-  Записывай даты как набор цифр — без точек.<br><br>
-
-  Если всё сделано правильно, у тебя получатся два знакомых числа.<br><br>
-
-  <button class="btn btn-secondary" onclick="showAfterReady()">Готово</button>
-  <button class="btn btn-secondary" onclick="showDates()">Не могу вспомнить даты</button>
-</div>
-
-<!-- ДАТЫ -->
-<div class="hint" id="datesHint">
-  <div class="hint-title">Ничего, бывает 💗</div>
-  Даты такие:<br>
-  — день, с которого для нас всё началось: <b>05.01.2023</b><br>
-  — день, когда мы впервые увиделись и по-настоящему заговорили: <b>25.06.2022</b>
-</div>
-
-<!-- ПОСЛЕ ГОТОВО -->
-<div class="hint" id="afterReady">
-  <div class="hint-title">Дальше</div>
-  Подумай, на что похожи эти числа и где такие обычно используют.<br><br>
-  <button class="btn btn-secondary" onclick="showHint2()">Нужна подсказка №2</button>
-</div>
-
-<!-- ПОДСКАЗКА №2 -->
-<div class="hint" id="hint2">
-  <div class="hint-title">Подсказка №2</div>
-  Эти числа нужно ввести в <b>правильное место</b> — ничего не меняя и не переставляя.<br><br>
-  <button class="btn btn-secondary" onclick="showHint3()">Всё равно не понимаю</button>
-  <button class="btn btn-secondary" onclick="showFinal()">Я поняла</button>
-</div>
-
-<!-- ОЖИДАНИЕ -->
-<div class="hint final-text" id="hint3">
-  💗 Подожди немного 💗<br><br>
-  Не переживай.<br>
-  Тогда просто немного подожди.<br>
-  Я знаю, ты не любишь ожиданий,<br>
-  но поверь — оно того стоит.<br><br>
-  Напиши, когда будешь готова — я закажу тебе такси,<br>
-  и оно привезёт тебя туда, куда нужно 💗
-</div>
-
-<!-- ФИНАЛ -->
-<div class="hint final-text" id="finalText">
-  🎉 ПОЗДРАВЛЯЮ С ДНЁМ РОЖДЕНИЯ 🎉<br><br>
-  Ты молодец, собирайся — я тебя жду :)<br>
-  Скажи, когда будешь готова,<br>
-  и нужно будет вызвать такси.
-</div>
-
-</div>
-</div>
-
 <script>
-// ---------- СЛАЙДЕР ----------
-const slides = document.querySelectorAll('#photoSlider img');
+const slides = document.querySelectorAll('.slider img');
 let currentSlide = 0;
-let hintHidden = false;
 
 function nextSlide() {
   slides[currentSlide].classList.remove('active');
   currentSlide = (currentSlide + 1) % slides.length;
   slides[currentSlide].classList.add('active');
-
-  if (!hintHidden) {
-    sliderHint.style.opacity = '0';
-    setTimeout(() => sliderHint.remove(), 600);
-    hintHidden = true;
-  }
 }
 
-// ---------- ОБЩАЯ ЛОГИКА ----------
 function hideAllHints() {
   document.querySelectorAll('.hint').forEach(h => h.classList.remove('show'));
 }
 
-// ---------- КВЕСТ ----------
-function firstGift() {
-  launchFlowers();
-}
-
 function showHint1() {
   hideAllHints();
-  hint1.classList.add('show');
+  document.getElementById('hint1').classList.add('show');
 }
 
 function showDates() {
-  hideAllHints();
-  datesHint.classList.add('show');
+  document.getElementById('dates').classList.add('show');
 }
 
 function showAfterReady() {
   hideAllHints();
-  afterReady.classList.add('show');
+  document.getElementById('afterReady').classList.add('show');
 }
 
 function showHint2() {
   hideAllHints();
-  hint2.classList.add('show');
+  document.getElementById('hint2').classList.add('show');
 }
 
-function showHint3() {
+function showWait() {
   hideAllHints();
-  hint3.classList.add('show');
+  document.getElementById('wait').classList.add('show');
 }
 
 function showFinal() {
   hideAllHints();
-  finalText.classList.add('show');
-}
-
-// ---------- АНИМАЦИЯ ----------
-function launchFlowers() {
-  const flowers = ['🌸','🌷','🌺','🌼','💐'];
-  for (let i = 0; i < 18; i++) {
-    const f = document.createElement('div');
-    f.textContent = flowers[Math.floor(Math.random()*flowers.length)];
-    f.style.position = 'fixed';
-    f.style.left = Math.random()*100 + 'vw';
-    f.style.bottom = '-20px';
-    f.style.fontSize = '24px';
-    f.style.animation = 'fly 3s ease-out forwards';
-    document.body.appendChild(f);
-    setTimeout(() => f.remove(), 3000);
-  }
+  document.getElementById('final').classList.add('show');
 }
 </script>
+
 </body>
 </html>
